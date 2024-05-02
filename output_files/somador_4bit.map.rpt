@@ -1,5 +1,5 @@
 Analysis & Synthesis report for somador_4bit
-Thu May  2 16:44:09 2024
+Thu May  2 17:26:32 2024
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May  2 16:44:09 2024       ;
+; Analysis & Synthesis Status     ; Successful - Thu May  2 17:26:32 2024       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; somador_4bit                                ;
 ; Top-level Entity Name           ; somador_4bit                                ;
@@ -177,31 +177,31 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                  ;
-+---------------------------------------------+--------------------------------+
-; Resource                                    ; Usage                          ;
-+---------------------------------------------+--------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 9                              ;
-;                                             ;                                ;
-; Combinational ALUT usage for logic          ; 11                             ;
-;     -- 7 input functions                    ; 0                              ;
-;     -- 6 input functions                    ; 7                              ;
-;     -- 5 input functions                    ; 0                              ;
-;     -- 4 input functions                    ; 2                              ;
-;     -- <=3 input functions                  ; 2                              ;
-;                                             ;                                ;
-; Dedicated logic registers                   ; 0                              ;
-;                                             ;                                ;
-; I/O pins                                    ; 15                             ;
-;                                             ;                                ;
-; Total DSP Blocks                            ; 0                              ;
-;                                             ;                                ;
-; Maximum fan-out node                        ; somador_completo:inst3|inst4~0 ;
-; Maximum fan-out                             ; 7                              ;
-; Total fan-out                               ; 76                             ;
-; Average fan-out                             ; 1.85                           ;
-+---------------------------------------------+--------------------------------+
++----------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                ;
++---------------------------------------------+------------------------------+
+; Resource                                    ; Usage                        ;
++---------------------------------------------+------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 9                            ;
+;                                             ;                              ;
+; Combinational ALUT usage for logic          ; 11                           ;
+;     -- 7 input functions                    ; 0                            ;
+;     -- 6 input functions                    ; 7                            ;
+;     -- 5 input functions                    ; 0                            ;
+;     -- 4 input functions                    ; 2                            ;
+;     -- <=3 input functions                  ; 2                            ;
+;                                             ;                              ;
+; Dedicated logic registers                   ; 0                            ;
+;                                             ;                              ;
+; I/O pins                                    ; 15                           ;
+;                                             ;                              ;
+; Total DSP Blocks                            ; 0                            ;
+;                                             ;                              ;
+; Maximum fan-out node                        ; somador_completo:inst3|inst4 ;
+; Maximum fan-out                             ; 7                            ;
+; Total fan-out                               ; 76                           ;
+; Average fan-out                             ; 1.85                         ;
++---------------------------------------------+------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -265,7 +265,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Thu May  2 16:44:00 2024
+    Info: Processing started: Thu May  2 17:26:23 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off somador_4bit -c somador_4bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -288,8 +288,8 @@ Info (21057): Implemented 26 device resources after synthesis - the final resour
     Info (21061): Implemented 11 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4827 megabytes
-    Info: Processing ended: Thu May  2 16:44:09 2024
+    Info: Processing ended: Thu May  2 17:26:32 2024
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Total CPU time (on all processors): 00:00:17
 
 
