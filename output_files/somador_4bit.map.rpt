@@ -1,5 +1,5 @@
 Analysis & Synthesis report for somador_4bit
-Thu May  2 17:26:32 2024
+Thu May 16 14:43:10 2024
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -43,14 +43,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May  2 17:26:32 2024       ;
+; Analysis & Synthesis Status     ; Successful - Thu May 16 14:43:10 2024       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; somador_4bit                                ;
 ; Top-level Entity Name           ; somador_4bit                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 15                                          ;
+; Total pins                      ; 29                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -166,42 +166,42 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                    ; Library ;
-+----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------+---------+
-; somador_4bit.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/15522341/Desktop/somador_4bit/somador_4bit.bdf         ;         ;
-; display_de_segmentos.bdf         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/15522341/Desktop/somador_4bit/display_de_segmentos.bdf ;         ;
-; somador_completo.bdf             ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/15522341/Desktop/somador_4bit/somador_completo.bdf     ;         ;
-+----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                               ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------+---------+
+; somador_4bit.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/15522341/Desktop/Nova pasta/somador-4bit/somador_4bit.bdf         ;         ;
+; display_de_segmentos.bdf         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/15522341/Desktop/Nova pasta/somador-4bit/display_de_segmentos.bdf ;         ;
+; somador_completo.bdf             ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/15522341/Desktop/Nova pasta/somador-4bit/somador_completo.bdf     ;         ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                ;
-+---------------------------------------------+------------------------------+
-; Resource                                    ; Usage                        ;
-+---------------------------------------------+------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 9                            ;
-;                                             ;                              ;
-; Combinational ALUT usage for logic          ; 11                           ;
-;     -- 7 input functions                    ; 0                            ;
-;     -- 6 input functions                    ; 7                            ;
-;     -- 5 input functions                    ; 0                            ;
-;     -- 4 input functions                    ; 2                            ;
-;     -- <=3 input functions                  ; 2                            ;
-;                                             ;                              ;
-; Dedicated logic registers                   ; 0                            ;
-;                                             ;                              ;
-; I/O pins                                    ; 15                           ;
-;                                             ;                              ;
-; Total DSP Blocks                            ; 0                            ;
-;                                             ;                              ;
-; Maximum fan-out node                        ; somador_completo:inst3|inst4 ;
-; Maximum fan-out                             ; 7                            ;
-; Total fan-out                               ; 76                           ;
-; Average fan-out                             ; 1.85                         ;
-+---------------------------------------------+------------------------------+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimate of Logic utilization (ALMs needed) ; 16       ;
+;                                             ;          ;
+; Combinational ALUT usage for logic          ; 25       ;
+;     -- 7 input functions                    ; 0        ;
+;     -- 6 input functions                    ; 7        ;
+;     -- 5 input functions                    ; 0        ;
+;     -- 4 input functions                    ; 16       ;
+;     -- <=3 input functions                  ; 2        ;
+;                                             ;          ;
+; Dedicated logic registers                   ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 29       ;
+;                                             ;          ;
+; Total DSP Blocks                            ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; A2~input ;
+; Maximum fan-out                             ; 14       ;
+; Total fan-out                               ; 160      ;
+; Average fan-out                             ; 1.93     ;
++---------------------------------------------+----------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,8 +209,10 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Entity Name          ; Library Name ;
 +---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------+----------------------+--------------+
-; |somador_4bit                   ; 11 (0)              ; 0 (0)                     ; 0                 ; 0          ; 15   ; 0            ; |somador_4bit                            ; somador_4bit         ; work         ;
+; |somador_4bit                   ; 25 (0)              ; 0 (0)                     ; 0                 ; 0          ; 29   ; 0            ; |somador_4bit                            ; somador_4bit         ; work         ;
+;    |display_de_segmentos:inst1| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |somador_4bit|display_de_segmentos:inst1 ; display_de_segmentos ; work         ;
 ;    |display_de_segmentos:inst2| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |somador_4bit|display_de_segmentos:inst2 ; display_de_segmentos ; work         ;
+;    |display_de_segmentos:inst8| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |somador_4bit|display_de_segmentos:inst8 ; display_de_segmentos ; work         ;
 ;    |somador_completo:inst3|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |somador_4bit|somador_completo:inst3     ; somador_completo     ; work         ;
 ;    |somador_completo:inst7|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |somador_4bit|somador_completo:inst7     ; somador_completo     ; work         ;
 ;    |somador_completo:inst|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |somador_4bit|somador_completo:inst      ; somador_completo     ; work         ;
@@ -238,15 +240,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 11                          ;
-;     normal            ; 11                          ;
+; arriav_lcell_comb     ; 25                          ;
+;     normal            ; 25                          ;
 ;         2 data inputs ; 2                           ;
-;         4 data inputs ; 2                           ;
+;         4 data inputs ; 16                          ;
 ;         6 data inputs ; 7                           ;
-; boundary_port         ; 15                          ;
+; boundary_port         ; 29                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.89                        ;
+; Average LUT depth     ; 1.52                        ;
 +-----------------------+-----------------------------+
 
 
@@ -265,7 +267,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Thu May  2 17:26:23 2024
+    Info: Processing started: Thu May 16 14:43:00 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off somador_4bit -c somador_4bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -282,14 +284,14 @@ Info (12128): Elaborating entity "somador_completo" for hierarchy "somador_compl
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 26 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 54 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 11 logic cells
+    Info (21059): Implemented 21 output pins
+    Info (21061): Implemented 25 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4827 megabytes
-    Info: Processing ended: Thu May  2 17:26:32 2024
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 4823 megabytes
+    Info: Processing ended: Thu May 16 14:43:10 2024
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:18
 
 

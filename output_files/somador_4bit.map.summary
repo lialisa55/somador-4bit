@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Thu May  2 17:26:32 2024
+Analysis & Synthesis Status : Successful - Thu May 16 14:43:10 2024
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : somador_4bit
 Top-level Entity Name : somador_4bit
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 0
-Total pins : 15
+Total pins : 29
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0
