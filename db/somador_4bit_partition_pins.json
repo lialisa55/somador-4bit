@@ -88,6 +88,22 @@
 					"strict" : false
 				},
 				{
+					"name" : "C0",
+					"strict" : false
+				},
+				{
+					"name" : "C3",
+					"strict" : false
+				},
+				{
+					"name" : "C4",
+					"strict" : false
+				},
+				{
+					"name" : "C5",
+					"strict" : false
+				},
+				{
 					"name" : "A2",
 					"strict" : false
 				},

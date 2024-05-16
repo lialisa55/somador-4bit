@@ -1,4 +1,4 @@
-Fitter Status : Successful - Thu May 16 14:43:25 2024
+Fitter Status : Successful - Thu May 16 15:53:12 2024
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : somador_4bit
 Top-level Entity Name : somador_4bit
@@ -7,7 +7,7 @@ Device : 5CEBA4F23C7
 Timing Models : Final
 Logic utilization (in ALMs) : 17 / 18,480 ( < 1 % )
 Total registers : 0
-Total pins : 29 / 224 ( 13 % )
+Total pins : 36 / 224 ( 16 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 3,153,920 ( 0 % )
 Total RAM Blocks : 0 / 308 ( 0 % )

@@ -1,5 +1,5 @@
 Fitter report for somador_4bit
-Thu May 16 14:43:26 2024
+Thu May 16 15:53:12 2024
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Thu May 16 14:43:25 2024       ;
+; Fitter Status                   ; Successful - Thu May 16 15:53:12 2024       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; somador_4bit                                ;
 ; Top-level Entity Name           ; somador_4bit                                ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; 17 / 18,480 ( < 1 % )                       ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 29 / 224 ( 13 % )                           ;
+; Total pins                      ; 36 / 224 ( 16 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
 ; Total RAM Blocks                ; 0 / 308 ( 0 % )                             ;
@@ -153,9 +153,9 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processor 3            ;   0.2%      ;
-;     Processor 4            ;   0.1%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processor 3            ;   0.3%      ;
+;     Processor 4            ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -165,8 +165,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 84 ) ; 0.00 % ( 0 / 84 )          ; 0.00 % ( 0 / 84 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 84 ) ; 0.00 % ( 0 / 84 )          ; 0.00 % ( 0 / 84 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 99 ) ; 0.00 % ( 0 / 99 )          ; 0.00 % ( 0 / 99 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 99 ) ; 0.00 % ( 0 / 99 )          ; 0.00 % ( 0 / 99 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -189,7 +189,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 84 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 99 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -225,10 +225,10 @@ The pin-out file can be found in C:/Users/15522341/Desktop/Nova pasta/somador-4b
 ;     -- Logic LABs                                           ; 3                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 26                 ;       ;
+; Combinational ALUT usage for logic                          ; 27                 ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
 ;     -- 6 input functions                                    ; 7                  ;       ;
-;     -- 5 input functions                                    ; 0                  ;       ;
+;     -- 5 input functions                                    ; 1                  ;       ;
 ;     -- 4 input functions                                    ; 16                 ;       ;
 ;     -- <=3 input functions                                  ; 3                  ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
@@ -242,7 +242,7 @@ The pin-out file can be found in C:/Users/15522341/Desktop/Nova pasta/somador-4b
 ;         -- Routing optimization registers                   ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
-; I/O pins                                                    ; 29 / 224           ; 13 %  ;
+; I/O pins                                                    ; 36 / 224           ; 16 %  ;
 ;     -- Clock pins                                           ; 2 / 9              ; 22 %  ;
 ;     -- Dedicated input pins                                 ; 0 / 11             ; 0 %   ;
 ;                                                             ;                    ;       ;
@@ -266,11 +266,11 @@ The pin-out file can be found in C:/Users/15522341/Desktop/Nova pasta/somador-4b
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.4% / 0.4% / 0.2% ;       ;
-; Maximum fan-out                                             ; 14                 ;       ;
-; Highest non-global fan-out                                  ; 14                 ;       ;
-; Total fan-out                                               ; 160                ;       ;
-; Average fan-out                                             ; 1.90               ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.3% / 0.4% / 0.2% ;       ;
+; Maximum fan-out                                             ; 15                 ;       ;
+; Highest non-global fan-out                                  ; 15                 ;       ;
+; Total fan-out                                               ; 176                ;       ;
+; Average fan-out                                             ; 1.78               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -299,10 +299,10 @@ The pin-out file can be found in C:/Users/15522341/Desktop/Nova pasta/somador-4b
 ;     -- Logic LABs                                           ; 3                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
-; Combinational ALUT usage for logic                          ; 26                   ; 0                              ;
+; Combinational ALUT usage for logic                          ; 27                   ; 0                              ;
 ;     -- 7 input functions                                    ; 0                    ; 0                              ;
 ;     -- 6 input functions                                    ; 7                    ; 0                              ;
-;     -- 5 input functions                                    ; 0                    ; 0                              ;
+;     -- 5 input functions                                    ; 1                    ; 0                              ;
 ;     -- 4 input functions                                    ; 16                   ; 0                              ;
 ;     -- <=3 input functions                                  ; 3                    ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                    ; 0                              ;
@@ -320,7 +320,7 @@ The pin-out file can be found in C:/Users/15522341/Desktop/Nova pasta/somador-4b
 ;                                                             ;                      ;                                ;
 ;                                                             ;                      ;                                ;
 ; Virtual pins                                                ; 0                    ; 0                              ;
-; I/O pins                                                    ; 29                   ; 0                              ;
+; I/O pins                                                    ; 36                   ; 0                              ;
 ; I/O registers                                               ; 0                    ; 0                              ;
 ; Total block memory bits                                     ; 0                    ; 0                              ;
 ; Total block memory implementation bits                      ; 0                    ; 0                              ;
@@ -332,7 +332,7 @@ The pin-out file can be found in C:/Users/15522341/Desktop/Nova pasta/somador-4b
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 160                  ; 0                              ;
+;     -- Total Connections                                    ; 176                  ; 0                              ;
 ;     -- Registered Connections                               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
@@ -341,7 +341,7 @@ The pin-out file can be found in C:/Users/15522341/Desktop/Nova pasta/somador-4b
 ;                                                             ;                      ;                                ;
 ; Partition Interface                                         ;                      ;                                ;
 ;     -- Input Ports                                          ; 8                    ; 0                              ;
-;     -- Output Ports                                         ; 21                   ; 0                              ;
+;     -- Output Ports                                         ; 28                   ; 0                              ;
 ;     -- Bidir Ports                                          ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Registered Ports                                            ;                      ;                                ;
@@ -367,12 +367,12 @@ The pin-out file can be found in C:/Users/15522341/Desktop/Nova pasta/somador-4b
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; A0   ; U13   ; 4A       ; 33           ; 0            ; 40           ; 10                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; A1   ; T13   ; 4A       ; 34           ; 0            ; 0            ; 9                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; A2   ; AA15  ; 4A       ; 36           ; 0            ; 34           ; 14                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; A3   ; AA14  ; 4A       ; 34           ; 0            ; 51           ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; A2   ; AA15  ; 4A       ; 36           ; 0            ; 34           ; 15                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; A3   ; AA14  ; 4A       ; 34           ; 0            ; 51           ; 9                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; B0   ; V13   ; 4A       ; 33           ; 0            ; 57           ; 10                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; B1   ; T12   ; 4A       ; 34           ; 0            ; 17           ; 9                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; B2   ; AB15  ; 4A       ; 36           ; 0            ; 51           ; 14                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; B3   ; AA13  ; 4A       ; 34           ; 0            ; 34           ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; B2   ; AB15  ; 4A       ; 36           ; 0            ; 51           ; 15                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; B3   ; AA13  ; 4A       ; 34           ; 0            ; 34           ; 9                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -388,6 +388,13 @@ The pin-out file can be found in C:/Users/15522341/Desktop/Nova pasta/somador-4b
 ; 4    ; Y22   ; 4A       ; 48           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; 5    ; Y21   ; 4A       ; 50           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; 6    ; AA22  ; 4A       ; 46           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; C0   ; AA20  ; 4A       ; 44           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; C1   ; AB20  ; 4A       ; 40           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; C2   ; AA19  ; 4A       ; 44           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; C3   ; AA18  ; 4A       ; 43           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; C4   ; AB18  ; 4A       ; 38           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; C5   ; AA17  ; 4A       ; 43           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; C6   ; U22   ; 4A       ; 51           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; OA0  ; U20   ; 4A       ; 52           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; OA1  ; Y20   ; 4A       ; 48           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; OA2  ; V20   ; 4A       ; 44           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
@@ -413,7 +420,7 @@ The pin-out file can be found in C:/Users/15522341/Desktop/Nova pasta/somador-4b
 ; 2A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 3A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 3B       ; 2 / 32 ( 6 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 4A       ; 27 / 48 ( 56 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 4A       ; 34 / 48 ( 71 % ) ; 2.5V          ; --           ; 2.5V          ;
 ; 5A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 5B       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 7A       ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
@@ -464,10 +471,10 @@ The pin-out file can be found in C:/Users/15522341/Desktop/Nova pasta/somador-4b
 ; AA14     ; 111        ; 4A       ; A3                              ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AA15     ; 116        ; 4A       ; A2                              ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AA16     ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AA17     ; 127        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AA18     ; 129        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AA19     ; 130        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AA20     ; 132        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AA17     ; 127        ; 4A       ; C5                              ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AA18     ; 129        ; 4A       ; C3                              ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AA19     ; 130        ; 4A       ; C2                              ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AA20     ; 132        ; 4A       ; C0                              ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AA21     ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AA22     ; 137        ; 4A       ; 6                               ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AB1      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -487,9 +494,9 @@ The pin-out file can be found in C:/Users/15522341/Desktop/Nova pasta/somador-4b
 ; AB15     ; 114        ; 4A       ; B2                              ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AB16     ;            ; 4A       ; VREFB4AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB17     ; 119        ; 4A       ; OB1                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; AB18     ; 121        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AB18     ; 121        ; 4A       ; C4                              ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AB19     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AB20     ; 122        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AB20     ; 122        ; 4A       ; C1                              ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AB21     ; 124        ; 4A       ; OB6                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AB22     ; 135        ; 4A       ; OB5                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; B1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -843,7 +850,7 @@ The pin-out file can be found in C:/Users/15522341/Desktop/Nova pasta/somador-4b
 ; U19      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; U20      ; 153        ; 4A       ; OA0                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; U21      ; 151        ; 4A       ; 0                               ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; U22      ; 146        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; U22      ; 146        ; 4A       ; C6                              ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; V1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V3       ; 56         ; 3A       ; ^DCLK                           ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
@@ -940,6 +947,13 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; OB4      ; Incomplete set of assignments ;
 ; OB5      ; Incomplete set of assignments ;
 ; OB6      ; Incomplete set of assignments ;
+; C0       ; Incomplete set of assignments ;
+; C1       ; Incomplete set of assignments ;
+; C2       ; Incomplete set of assignments ;
+; C3       ; Incomplete set of assignments ;
+; C4       ; Incomplete set of assignments ;
+; C5       ; Incomplete set of assignments ;
+; C6       ; Incomplete set of assignments ;
 ; A2       ; Incomplete set of assignments ;
 ; B2       ; Incomplete set of assignments ;
 ; A1       ; Incomplete set of assignments ;
@@ -956,13 +970,13 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +---------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node      ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Entity Name          ; Library Name ;
 +---------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------+----------------------+--------------+
-; |somador_4bit                   ; 16.5 (0.5)           ; 16.5 (0.5)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 26 (1)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 29   ; 0            ; |somador_4bit                            ; somador_4bit         ; work         ;
+; |somador_4bit                   ; 17.0 (0.5)           ; 17.0 (0.5)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 27 (1)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 36   ; 0            ; |somador_4bit                            ; somador_4bit         ; work         ;
 ;    |display_de_segmentos:inst1| ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |somador_4bit|display_de_segmentos:inst1 ; display_de_segmentos ; work         ;
 ;    |display_de_segmentos:inst2| ; 7.0 (7.0)            ; 7.0 (7.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |somador_4bit|display_de_segmentos:inst2 ; display_de_segmentos ; work         ;
 ;    |display_de_segmentos:inst8| ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |somador_4bit|display_de_segmentos:inst8 ; display_de_segmentos ; work         ;
 ;    |somador_completo:inst|      ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |somador_4bit|somador_completo:inst      ; somador_completo     ; work         ;
 ;    |somador_completo:inst3|     ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |somador_4bit|somador_completo:inst3     ; somador_completo     ; work         ;
-;    |somador_completo:inst7|     ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |somador_4bit|somador_completo:inst7     ; somador_completo     ; work         ;
+;    |somador_completo:inst7|     ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |somador_4bit|somador_completo:inst7     ; somador_completo     ; work         ;
 +---------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -993,6 +1007,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; OB4  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; OB5  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; OB6  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; C0   ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; C1   ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; C2   ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; C3   ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; C4   ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; C5   ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; C6   ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; A2   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; B2   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; A1   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
@@ -1024,6 +1045,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - display_de_segmentos:inst1|inst44~0 ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst1|inst55~0 ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst1|inst66   ; 0                 ; 0       ;
+;      - somador_completo:inst7|inst4        ; 0                 ; 0       ;
 ; B2                                         ;                   ;         ;
 ;      - display_de_segmentos:inst2|inst~0   ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst2|inst12~0 ; 0                 ; 0       ;
@@ -1039,6 +1061,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - display_de_segmentos:inst8|inst44~0 ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst8|inst55~0 ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst8|inst66   ; 0                 ; 0       ;
+;      - somador_completo:inst7|inst4        ; 0                 ; 0       ;
 ; A1                                         ;                   ;         ;
 ;      - somador_completo:inst3|inst4        ; 0                 ; 0       ;
 ;      - somador_completo:inst3|inst1        ; 0                 ; 0       ;
@@ -1082,7 +1105,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - display_de_segmentos:inst8|inst55~0 ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst8|inst66   ; 0                 ; 0       ;
 ; A3                                         ;                   ;         ;
-;      - somador_completo:inst7|inst1~0      ; 0                 ; 0       ;
+;      - somador_completo:inst7|inst         ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst1|inst~0   ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst1|inst12~0 ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst1|inst24~0 ; 0                 ; 0       ;
@@ -1090,8 +1113,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - display_de_segmentos:inst1|inst44~0 ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst1|inst55~0 ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst1|inst66   ; 0                 ; 0       ;
+;      - somador_completo:inst7|inst4        ; 0                 ; 0       ;
 ; B3                                         ;                   ;         ;
-;      - somador_completo:inst7|inst1~0      ; 0                 ; 0       ;
+;      - somador_completo:inst7|inst         ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst8|inst~0   ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst8|inst12~0 ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst8|inst24~0 ; 0                 ; 0       ;
@@ -1099,6 +1123,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - display_de_segmentos:inst8|inst44~0 ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst8|inst55~0 ; 0                 ; 0       ;
 ;      - display_de_segmentos:inst8|inst66   ; 0                 ; 0       ;
+;      - somador_completo:inst7|inst4        ; 0                 ; 0       ;
 +--------------------------------------------+-------------------+---------+
 
 
@@ -1107,21 +1132,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+------------------------+
 ; Routing Resource Type        ; Usage                  ;
 +------------------------------+------------------------+
-; Block interconnects          ; 35 / 140,056 ( < 1 % ) ;
+; Block interconnects          ; 40 / 140,056 ( < 1 % ) ;
 ; C12 interconnects            ; 0 / 6,048 ( 0 % )      ;
-; C2 interconnects             ; 26 / 54,648 ( < 1 % )  ;
-; C4 interconnects             ; 4 / 25,920 ( < 1 % )   ;
+; C2 interconnects             ; 24 / 54,648 ( < 1 % )  ;
+; C4 interconnects             ; 7 / 25,920 ( < 1 % )   ;
 ; DQS bus muxes                ; 0 / 17 ( 0 % )         ;
 ; DQS-18 I/O buses             ; 0 / 17 ( 0 % )         ;
 ; DQS-9 I/O buses              ; 0 / 17 ( 0 % )         ;
 ; Direct links                 ; 0 / 140,056 ( 0 % )    ;
 ; Global clocks                ; 0 / 16 ( 0 % )         ;
-; Local interconnects          ; 0 / 36,960 ( 0 % )     ;
+; Local interconnects          ; 1 / 36,960 ( < 1 % )   ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
-; R14 interconnects            ; 6 / 5,984 ( < 1 % )    ;
-; R14/C12 interconnect drivers ; 6 / 9,504 ( < 1 % )    ;
-; R3 interconnects             ; 24 / 60,192 ( < 1 % )  ;
-; R6 interconnects             ; 22 / 127,072 ( < 1 % ) ;
+; R14 interconnects            ; 4 / 5,984 ( < 1 % )    ;
+; R14/C12 interconnect drivers ; 4 / 9,504 ( < 1 % )    ;
+; R3 interconnects             ; 27 / 60,192 ( < 1 % )  ;
+; R6 interconnects             ; 21 / 127,072 ( < 1 % ) ;
 ; Spine clocks                 ; 0 / 120 ( 0 % )        ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )      ;
 +------------------------------+------------------------+
@@ -1182,9 +1207,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000034    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-; Total Pass         ; 29        ; 0            ; 29        ; 0            ; 0            ; 29        ; 29        ; 0            ; 29        ; 29        ; 0            ; 21           ; 0            ; 0            ; 0            ; 0            ; 21           ; 0            ; 0            ; 0            ; 0            ; 21           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; Total Pass         ; 36        ; 0            ; 36        ; 0            ; 0            ; 36        ; 36        ; 0            ; 36        ; 36        ; 0            ; 28           ; 0            ; 0            ; 0            ; 0            ; 28           ; 0            ; 0            ; 0            ; 0            ; 28           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 29           ; 0         ; 29           ; 29           ; 0         ; 0         ; 29           ; 0         ; 0         ; 29           ; 8            ; 29           ; 29           ; 29           ; 29           ; 8            ; 29           ; 29           ; 29           ; 29           ; 8            ; 29           ; 29           ; 29           ; 29           ; 29           ; 29           ;
+; Total Inapplicable ; 0         ; 36           ; 0         ; 36           ; 36           ; 0         ; 0         ; 36           ; 0         ; 0         ; 36           ; 8            ; 36           ; 36           ; 36           ; 36           ; 8            ; 36           ; 36           ; 36           ; 36           ; 8            ; 36           ; 36           ; 36           ; 36           ; 36           ; 36           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; 0                  ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; 1                  ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
@@ -1207,6 +1232,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; OB4                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; OB5                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; OB6                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; C0                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; C1                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; C2                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; C3                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; C4                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; C5                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; C6                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; A2                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; B2                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; A1                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
@@ -1298,7 +1330,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.15 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1306,9 +1338,9 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file C:/Users/15522341/Desktop/Nova pasta/somador-4bit/output_files/somador_4bit.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6224 megabytes
-    Info: Processing ended: Thu May 16 14:43:26 2024
-    Info: Elapsed time: 00:00:15
+    Info: Peak virtual memory: 6182 megabytes
+    Info: Processing ended: Thu May 16 15:53:13 2024
+    Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:22
 
 
